@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html,body{height:100%;padding: 0;margin:0;}
+a:hover{text-decoration: none;}
+a{text-decoration: none;}
+input{margin: 1em;}
+
+#pageContainer{width: 100%;height: 100%;background-color: #fafafa;}
+
+header{width: 100%;height: 60px;position: fixed;top: 0;left: 0;padding:7px 16px;border-bottom: 1px solid #e8e8e8;background-color: #fff;box-sizing: border-box;z-index: 1;align-items: center;display: flex;justify-content: space-between;}
+
+header .rightIcons img, header button{border: none;width: 30px;height: 30px;background: transparent;cursor: pointer;}
+
+#sideNavContainer{width: 240px;background-color: #f5f5f5;padding-top: 60px;position: fixed;top:0;bottom: 0;}
+
+#mainSectionContainer{padding-top: 60px;display: flex;}
+
+.leftPadding{padding-left: 250px}
+
+header .logoContainer{width: 80px;height:80px;}
+header .logoContainer img{width: 100%;height: 100%;margin-left: 8px;}
+
+/* Barre de recherche header */
+
+header .searchBarContainer{flex: 1;display: flex;margin: 0 40px;}
+
+header .searchBarContainer form{flex: 1;display: flex;}
+header .searchBarContainer form .searchBar{flex: 1;color: #232323;font-size: 14px;max-width: 600px;border: 1px solid #ccc;box-shadow: #eee 0 1px 2px 0 inset; padding: 6px;height: 35px;border-right: none;}
+header .searchBarContainer .searchBtn{height: 35px;background-color: #f8f8f8;border: 1px solid #d3d3d3;cursor: pointer;width: 65px;}
+header .searchBarContainer .searchBtn img{height: 30px;width: 30px;}
+
+body div{margin: 0em;}
+
+
+/* Page inscription (signUp.php) */
+
+#registerContainer .header{display: flex;flex-direction: column;align-items:center;}
+#registerContainer{background-color: #efefee;height: 100vh;display: flex;justify-content: center;align-items: center;}
+.column{background: #fff;padding: 2em;box-shadow: rgba(0,0,0,0.1) 0 1px 2px;min-height: 300px;}
+#registerContainer .column{width: 700px;max-height: 100%;overflow-y:auto;padding: 0 2.5em 2em 2.5em;}
+#registerContainer label{text-transform: uppercase;}
+
+.error{display:inline-block;background-color: indianred;color: #fff;font-size: 0.9em;padding: 0.5em;margin:0.3em 0;}
+
+/* Page Watch */
+
+.videoPlayer video{width: 100%;}
+.viewCount{color: grey;}
+
+/* Bouton like/dislike */
+
+.bottomSection .controls button{background: transparent;border: none;cursor: pointer;}
+.bottomSection .controls button img{height: 30px;width: 30px;margin: 0.3em;}
+
+/* Deuxieme section */
+.topContent{display: flex;}
+.avatarProfile{width: 45px;height: 45px;border-radius: 50%;background: #2323;margin:0 1em;}
+.uploadInfos{flex: 1;display: flex;flex-direction: column;}
+.date{font-size: 13px;color: #777;}
+.subscribeBtn{display: flex;flex-direction: column;justify-content: center;}
+.subscribeBtn .subscribe{background-color: #ff0000;color:#fff;padding: 0.2em;border: none;}
+.subscribeBtn .unsubscribe{background-color: #eee;color:#232323;padding: 0.2em;border: none;}
+
+
+/* Suggestions */
+.gridItem .thumbnail{width:210px ;height: 118px;position: relative;}
+.gridItem .thumbnail img{width: 100%;height: 100%;}
+.gridItem .thumbnail .duration{position: absolute;bottom: 0;right: 0;background-color: rgba(17,17,17,0.7);color: #eee;font-size: 14px;border-radius: 2px;padding: 2px 4px;margin: 4px;font-weight: 500;}
+.videoGrid{display: flex;flex-wrap: wrap;}
+
+/* Détails */
+
+.gridItem{display: flex;margin-bottom: 1em;font-weight: 500;}
+.gridItem .details{margin-left: 4px;display: flex;flex-direction: column;cursor: pointer;}
+.gridItem .details .title {color: #232323;font-size: 20px;font-weight: 500;margin-bottom: 0.1em;}
+.gridItem .details .username, .gridItem .details .stats{color: rgba(17,17,17,0.6);font-size: 14px;}
+
+/* Acceuil */
+.home .gridItem{flex-direction: column;margin: 1em;}
+.left{font-weight: 500;font-size: larger;}
+
+/* Menu de gauche */
+#sideNavContainer .navItems{margin-top: 2em;margin-left: 1em;}
+.navigation img{height: 25px;margin-right: 1em;}
+.navigation a{display: flex;align-items: center;color: #111;padding: 0.8em;}
+.navigation a:hover{background-color: rgba(0,0,0,0.04);}
+
+.gridHeader{margin:1em 0;border-bottom: 1px solid rgba(17,17,17,0.4);padding-bottom: 0.5em;}
+.details h3.title{text-transform: capitalize;}
+.left{text-transform: uppercase;font-weight: 600;}
+p.description{width: 60%;}
+
+
+/* Page de profil */
+.profileContainer{width: 100%;}
+.coverImgContainer{height: 267px;width: 100%;display: flex;justify-content: center;align-items: center;}
+.coverImgContainer .profileName{font-size: 50px;columns: #fff;letter-spacing: 5px;}
+
+/* Profil Infos */
+.profileHeader{display: flex;padding: 1em 3em;}
+.profileHeader .userInfosContainer{display: flex;flex: 1;}
+.profileHeader .userInfosContainer .profilImg{width: 50px;height: 50px;}
+.profileHeader .userInfos{flex: 1;display: flex;flex-direction: column;justify-content: center;}
+
+.profileHeader .userInfos .title{font-size: 24px;font-weight: 400;color: #111;}
+
+.profileHeader .userInfos .subscriberCount{color: rgba(17,17,17,0.6);font-size: 14px;}
+
+.profileHeader .btnContainer{display: flex;justify-content: flex-end;}
+.profileHeader .btnContainer .btnItem{align-items: center;}
+.profileHeader .btnContainer .btnItem button{padding: 0.7em;font-size: 14px;font-weight: 500;border-bottom: 2px;cursor: pointer;text-transform: uppercase;}
+.tab-pane.active.show .videoGrid{display: inline;}
+
+/* About tab */
+.aboutContainer .values{display: flex;flex-direction: column;color: rgba(17,17,17,0.6);}
+.main{display: flex;justify-content: space-between;}
+aside.suggestions{margin-left: 2em;}
+section.videoPlayer{flex: 1;}
+
+.editVideoContainer{display: flex;flex-direction: column;}
+.editVideoContainer .topSection{display: flex;}
+.thumbnailItem{margin-bottom: 1em;padding: 2px;}
+.thumbnailItem.selected{border: 3px solid #48BDD7;}
+.editVideoContainer .topSection .thumbnailItemsContainer .thumbnailItem img{cursor: pointer;width: 100%;}
+
+
+.bottomSection{margin-top: 2em;}
+form{width: 80%;}

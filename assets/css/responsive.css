@@ -1,0 +1,4 @@
+@media all and (max-width:600px){
+    #sideNavContainer{display: none;}
+    #mainSectionContainer.leftPadding{padding:0;}
+}
